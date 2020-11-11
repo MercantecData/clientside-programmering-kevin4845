@@ -1,7 +1,11 @@
+/* Main Blue Color: #0390fc */
+/* Main Dark Color: #333333 */
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Lato';
+    font-weight: bold;
 } 
 
 @keyframes fade {
@@ -14,14 +18,34 @@ body {
     100% {background-size: 120%;}
 }
 
+.box {
+    display: inline-block;
+}
+
+.project-box {
+    padding: 15px;
+    font-size: large;
+    border: 1px solid black;
+    color: white;
+    background-color: #0390fc;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+}
+
+.col-4 {
+    width: 30%;
+    margin: 10px;
+}
+
 .wrapper {
-    padding: 0 15%;
+    padding: 0 13%;
 }
 
 .topnav {
     overflow: hidden;
     background-color: #333;
-    position: fixed;
+    position: sticky;
     width: 100%;
 }
 
@@ -52,7 +76,6 @@ body {
     margin: 0;
     animation-name: fade;
     animation-duration: 1s;
-    cursor: default;
 }
 
 .welcome-box {
@@ -65,7 +88,9 @@ body {
     background-position: center;
     animation-name: zoomIn1;
     animation-duration: 1s;
-    background-attachment: scroll;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
 }
 
 .about-me-text {
@@ -74,12 +99,17 @@ body {
     text-align: center;
 }
 
+#about {
+    padding: 25px;
+}
+
 .profile-picture {
     border-radius: 50%;
     width: 25%;
     text-align: center;
     display: block;
     margin: 3rem auto;
+    margin-top: 0;
 }
 
 .center-content {
@@ -89,7 +119,7 @@ body {
 .buttons button{
     background-color: rgb(0, 183, 255);
     padding: 15px 25px;
-    font-size: 35px;
+    font-size: 50px;
     font-family: 'Lato';
     margin: 0 25px;
     border: none;
@@ -98,7 +128,7 @@ body {
 .buttons button:hover{
     background-color: rgb(0, 118, 165);
     padding: 15px 25px;
-    font-size: 35px;
+    font-size: 50px;
     font-family: 'Lato';
     margin: 0 25px;
 }
@@ -107,50 +137,14 @@ body {
     text-align: center;
 }
 
-#roulette {
-    text-align: center;
-}
-
 #coding-projects {
-    background-color: #333;
     text-align: center;
-    margin-top: 25px;
-}
-
-#coding-projects table {
-    color: white;
-    text-decoration: none;
-    margin: 0 auto;
+    background-color: #333;
+    padding: 15px;
 }
 
 #coding-projects h1 {
-    font-size: 50px;
     color: white;
-}
-
-#coding-projects table th{
-    font-size: 50px;
-}
-
-#coding-projects table td {
-    font-size: 25px;
-}
-
-#coding-projects table a {
-    color: white;
-    text-decoration: none;
-}
-
-#footer {
-    background-color: #333;
-    width: 100%;
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.footer-content {
-    padding: 1rem;
     font-family: 'Lato';
-    color: white;
-    font-weight: 400;;
+    font-size: 25px;
 }

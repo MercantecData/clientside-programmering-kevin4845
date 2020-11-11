@@ -1,17 +1,18 @@
-function Roulette(userChoice) {
+function Rock() {
     var pcChoice = Math.floor((Math.random() * 3) + 1);
 
-    if (pcChoice == 1) {
+    if (pcChoice == "1") {
         
     }
 
-    if (pcChoice == 2) {
-        
-    }
+}
 
-    if (pcChoice == 3) {
-        
-    }
-    
+function Paper() {
+    var pcChoice = Math.floor((Math.random() * 3) + 1);
+
+}
+
+function Scissors() {
+    var pcChoice = Math.floor((Math.random() * 3) + 1);
 
 }

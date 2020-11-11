@@ -7,23 +7,53 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/9f9145f143.js" crossorigin="anonymous"></script>
 </head>
 <body onload="startTime()">
-    
-    <div class="topnav">
-        <div class="wrapper">
-            <a href="#welcome">Hjem</a>
-            <a href="#about">Omkring</a>
-            <a href="#contact">Kontakt</a>
-            <a href="#coding-projects">Kode projekter</a>
+    <header>
+        <div class="topnav">
+            <div class="wrapper">
+                <a href="#welcome">Hjem</a>
+                <a href="#about">Omkring</a>
+                <a href="#contact">Kontakt</a>
+                <a href="#coding-projects">Kode projekter</a>
+            </div>
         </div>
-    </div>
+    </header>
     
     <div class="content">
         <section id="welcome" class="welcome-box">
-            <div class="wrapper"></div>
-                
+            <div class="wrapper">
                 <h1 class="welcome-text">Velkommen til min portfolio<div id="clock"></div></h1>
+            </div>
+        </section>
+
+        <section id="coding-projects">
+            <div class="wrapper">
+                <h1>Projekter</h1>
+
+                <div class="project-button digital-signage-project">
+                    <div class="project-title">Digital Signage Software <i id="digital-signage-modal-open-button" class="fas fa-arrow-down" onclick="openModal(digital-signage-modal)"></i></div>
+                    <div class="project-modal" id="digital-signage-modal">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi molestiae tenetur, accusamus cum rerum labore obcaecati placeat provident eius perferendis, ipsa nulla eos consequatur iusto dolor a. Labore, molestiae at.</p>
+                    </div>
+                </div>
+
+                <div class="project-button digital-signage-project">
+                    <div class="project-title">Digital Signage Software</div>
+                    <div class="project-modal"></div>
+                </div>
+
+                <div class="project-button digital-signage-project">
+                    <div class="project-title">Digital Signage Software</div>
+                    <div class="project-modal"></div>
+                </div>
+
+                <div class="project-button digital-signage-project">
+                    <div class="project-title">Digital Signage Software</div>
+                    <div class="project-modal"></div>
+                </div>
+
             </div>
         </section>
 
@@ -36,21 +66,21 @@
             </div> 
         </section>
 
-        <section id="coding-projects">
-            <div class="wrapper">
-                <h1>Mine kode projekter</h1>
-                <a href=""><div class="box col-4 project-box">Digital Signage Software 2020</div></a>
-                <a href=""><div class="box col-4 project-box">Test</div></a>
-                <a href=""><div class="box col-4 project-box">Test</div></a>
-                <a href=""><div class="box col-4 project-box">Test</div></a>
+        <section id="social">
+            <div class="center-content">
+                <div class="wrapper">
+                    <h1>Sociale Medier</h1>
+                    <div class="box socialmedia-box linkedin"><i class="fab fa-linkedin"></i> Linkedin</div>
+                    <div class="box socialmedia-box facebook"><i class="fab fa-facebook-square"></i> Facebook</div>
+                    <div class="box socialmedia-box youtube"><i class="fab fa-youtube"></i> Youtube</div>
+                    <div class="box socialmedia-box twitch"><i class="fab fa-twitch"></i> Twitch</div>
+                </div>
             </div>
         </section>
 
-        <!--<section id="contact">
-            <div class="center-content">
-                
-            </div>
-        </section> -->
+        <div id="scrollToTop" onclick="scrollToTop()">
+            <i class="fas fa-arrow-up"></i>
+        </div>
     </div>
 </body>
 </html>

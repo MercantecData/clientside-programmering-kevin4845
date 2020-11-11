@@ -13,3 +13,13 @@ function checkTime(i) {
     if (i < 10) {i = "0" + i};
     return i;
 }
+
+function scrollToTop() {
+    window.scroll(0,0);
+    
+}
+
+function openModal(targetModal) {
+    var modal = document.getElementById(targetModal);
+    var btn = document.getElementById(targetModal + "");
+}

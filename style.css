@@ -1,5 +1,6 @@
 /* Main Blue Color: #0390fc */
-/* Main Dark Color: #333333 */
+/* Main Dark Blue Color: #0066b4 */
+/* Main Dark Color: #727272 */
 
 body {
     margin: 0;
@@ -8,9 +9,21 @@ body {
     font-weight: bold;
 } 
 
-.content {
-    margin-top: 15px;
-}
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: #0390fc; 
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0390fc; 
+  }
 
 @keyframes fade {
     0%   {opacity: 0%; font-size: 75px;}
@@ -26,7 +39,64 @@ body {
     display: inline-block;
 }
 
-.project-box {
+#scrollToTop {
+    padding: 15px;
+    background-color: #0390fc;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    position: fixed;
+    border-radius: 50%;
+}
+
+#scrollToTop .fa-arrow-up {
+    font-size: 35px;
+    color: #0066b4;
+}
+
+.content {
+    padding-top: 45px;
+}
+
+.project-button {
+    width: 75%;
+    margin: 10px;
+    background-color: #0390fc;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    display: inline-block;
+}
+
+.project-modal {
+    background-color: #006abb;
+    padding: 7px;
+}
+
+.project-modal p {
+    margin: 0;
+    font-weight: 200;
+    line-height: 25px;
+    text-align: left;
+    font-size: 15px;
+    color: white;
+}
+
+.project-button .project-title {
+    text-shadow: 0 0 7px black;
+    color: white;
+    line-height: 45px;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+#coding-projects h1 {
+    text-shadow: 0 0 7px black;
+    font-size: 50px;
+    margin: 15px;
+}
+
+.socialmedia-box {
     padding: 15px;
     font-size: large;
     border: 1px solid black;
@@ -36,15 +106,25 @@ body {
     -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
     cursor: default;
-}
-
-.project-box:hover {
-    background-color: #0066b4;
-}
-
-.col-4 {
-    width: 30%;
+    width: 15%;
     margin: 10px;
+    border: none;
+}
+
+.socialmedia-box.linkedin {
+    background-color: rgb(0,115,177);
+}
+
+.socialmedia-box.facebook {
+    background-color: rgb(10,127,236);
+}
+
+.socialmedia-box.youtube {
+    background-color: rgb(255,0,0) !important;
+}
+
+.socialmedia-box.twitch {
+    background-color: rgb(145,71,255) !important;
 }
 
 .wrapper {
@@ -148,12 +228,17 @@ body {
 
 #coding-projects {
     text-align: center;
-    background-color: #333;
+    background-color: #727272;
     padding: 15px;
 }
 
-#coding-projects h1 {
+h1 {
     color: white;
     font-family: 'Lato';
     font-size: 25px;
+}
+
+#social {
+    background-color: #727272;
+    padding: 25px;
 }

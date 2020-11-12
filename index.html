@@ -32,26 +32,18 @@
             <div class="wrapper">
                 <h1>Projekter</h1>
 
-                <div class="project-button digital-signage-project">
-                    <div class="project-title">Digital Signage Software <i id="digital-signage-modal-open-button" class="fas fa-arrow-down" onclick="openModal(digital-signage-modal)"></i></div>
-                    <div class="project-modal" id="digital-signage-modal">
+                <div class="project-button test1-project">
+                    <div class="project-title" id="test1-button">Digital Signage Software</div>
+                    <div class="project-modal" id="test1-modal">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi molestiae tenetur, accusamus cum rerum labore obcaecati placeat provident eius perferendis, ipsa nulla eos consequatur iusto dolor a. Labore, molestiae at.</p>
                     </div>
                 </div>
 
-                <div class="project-button digital-signage-project">
-                    <div class="project-title">Digital Signage Software</div>
-                    <div class="project-modal"></div>
-                </div>
-
-                <div class="project-button digital-signage-project">
-                    <div class="project-title">Digital Signage Software</div>
-                    <div class="project-modal"></div>
-                </div>
-
-                <div class="project-button digital-signage-project">
-                    <div class="project-title">Digital Signage Software</div>
-                    <div class="project-modal"></div>
+                <div class="project-button test2-project">
+                    <div class="project-title" id="test1-button">Digital Signage Software</div>
+                    <div class="project-modal" id="test2-modal">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi molestiae tenetur, accusamus cum rerum labore obcaecati placeat provident eius perferendis, ipsa nulla eos consequatur iusto dolor a. Labore, molestiae at.</p>
+                    </div>
                 </div>
 
             </div>
@@ -77,6 +69,35 @@
                 </div>
             </div>
         </section>
+
+        <script>
+
+            var modal1 = document.getElementById("test1-modal");
+            var modal2 = document.getElementById("test2-modal");
+
+            var btn1 = document.getElementById("test1-button");
+            var btn2 = document.getElementById("test2-button");
+
+            btn1.onclick = function() {
+                if (modal2.style.display = "block") {
+                    modal2.style.display = "none";
+                    modal1.style.display = "block";
+                } else {
+                    modal1.style.display = "block";
+                }
+
+                if (modal1.style.display = "block") {
+                    modal1.style.display = "none";
+                } else {
+                    modal1.style.display = "block";
+                }
+            }
+
+            /*btn2.onclick = function() {
+                
+            }*/
+
+        </script>
 
         <div id="scrollToTop" onclick="scrollToTop()">
             <i class="fas fa-arrow-up"></i>

@@ -88,6 +88,7 @@ body {
     line-height: 45px;
     font-weight: 600;
     font-size: 25px;
+    cursor: pointer;
 }
 
 #coding-projects h1 {
@@ -228,8 +229,12 @@ body {
 
 #coding-projects {
     text-align: center;
-    background-color: #727272;
+    background-color: #ebebeb;
     padding: 15px;
+}
+
+#coding-projects span {
+    text-align: right;
 }
 
 h1 {
@@ -239,6 +244,6 @@ h1 {
 }
 
 #social {
-    background-color: #727272;
+    background-color: #ebebeb;
     padding: 25px;
 }

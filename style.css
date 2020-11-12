@@ -35,8 +35,39 @@ body {
     100% {background-size: 120%;}
 }
 
+.field {
+    width: 25%;
+    font-size: 25px;
+    margin: 5px 0;
+}
+
+.field:focus {
+    border: 1px solid #0390fc;
+}
+
+.submit {
+    background-color: #0390fc;
+    width: 10%;
+    font-size: 25px;
+}
+
 .box {
     display: inline-block;
+}
+
+#contact {
+    padding: 25px;
+}
+
+#footer {
+    background-color: #333;
+}
+
+#footer h3 {
+    margin: 0;
+    line-height: 250%;
+    color: white;
+    font-family: 'Lato';
 }
 
 #scrollToTop {
@@ -71,6 +102,7 @@ body {
 .project-modal {
     background-color: #006abb;
     padding: 7px;
+    display: none;
 }
 
 .project-modal p {
@@ -89,9 +121,10 @@ body {
     font-weight: 600;
     font-size: 25px;
     cursor: pointer;
+    user-select: none;
 }
 
-#coding-projects h1 {
+.section-title {
     text-shadow: 0 0 7px black;
     font-size: 50px;
     margin: 15px;
@@ -110,6 +143,11 @@ body {
     width: 15%;
     margin: 10px;
     border: none;
+}
+
+.socialmedia-box:hover {
+    width: 20%;
+    height: 150%;
 }
 
 .socialmedia-box.linkedin {
@@ -166,13 +204,14 @@ body {
     margin: 0;
     animation-name: fade;
     animation-duration: 1s;
+    cursor: default;
 }
 
 .welcome-box {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background-image: url(Images/office.jpg);
+    background-image: url(Images/programming.jpg);
     background-repeat: no-repeat;
     background-size: 120%;
     background-position: center;
@@ -181,6 +220,8 @@ body {
     -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    background-color: rgba(0, 0, 0, 60%);
+    background-blend-mode: darken;
 }
 
 .about-me-text {

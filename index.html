@@ -9,7 +9,7 @@
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/9f9145f143.js" crossorigin="anonymous"></script>
 </head>
-<body onload="startTime()">
+<body onload="setup()">
     <header>
         <div class="topnav">
             <div class="wrapper">
@@ -30,18 +30,18 @@
 
         <section id="coding-projects">
             <div class="wrapper">
-                <h1>Projekter</h1>
+                <h1 class="section-title">Projekter</h1>
 
                 <div class="project-button test1-project">
-                    <div class="project-title" id="test1-button">Digital Signage Software</div>
-                    <div class="project-modal" id="test1-modal">
+                    <div onclick="modal(test1modal)" class="project-title" id="test1-button">Digital Signage Software</div>
+                    <div class="project-modal" id="test1modal">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi molestiae tenetur, accusamus cum rerum labore obcaecati placeat provident eius perferendis, ipsa nulla eos consequatur iusto dolor a. Labore, molestiae at.</p>
                     </div>
                 </div>
 
                 <div class="project-button test2-project">
-                    <div class="project-title" id="test1-button">Digital Signage Software</div>
-                    <div class="project-modal" id="test2-modal">
+                    <div onclick="modal(test2modal)" class="project-title" id="test1-button">Digital Signage Software</div>
+                    <div class="project-modal" id="test2modal">
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi molestiae tenetur, accusamus cum rerum labore obcaecati placeat provident eius perferendis, ipsa nulla eos consequatur iusto dolor a. Labore, molestiae at.</p>
                     </div>
                 </div>
@@ -61,7 +61,7 @@
         <section id="social">
             <div class="center-content">
                 <div class="wrapper">
-                    <h1>Sociale Medier</h1>
+                    <h1 class="section-title">Sociale Medier</h1>
                     <div class="box socialmedia-box linkedin"><i class="fab fa-linkedin"></i> Linkedin</div>
                     <div class="box socialmedia-box facebook"><i class="fab fa-facebook-square"></i> Facebook</div>
                     <div class="box socialmedia-box youtube"><i class="fab fa-youtube"></i> Youtube</div>
@@ -70,34 +70,26 @@
             </div>
         </section>
 
-        <script>
+        <section id="contact">
+            <div class="center-content">
+                <div class="wrapper">
+                    <h1 class="section-title">Test GET og POST requests</h1>
+                    <form action="https://madsbock-formtester.azurewebsites.net/" method="GET">
+                        <input class="field" type="email" name="email" id="email" placeholder="Email"><br>
+                        <input class="field" type="password" name="password" id="password" placeholder="Password"><br>
+                        <input class="submit" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </section>
 
-            var modal1 = document.getElementById("test1-modal");
-            var modal2 = document.getElementById("test2-modal");
-
-            var btn1 = document.getElementById("test1-button");
-            var btn2 = document.getElementById("test2-button");
-
-            btn1.onclick = function() {
-                if (modal2.style.display = "block") {
-                    modal2.style.display = "none";
-                    modal1.style.display = "block";
-                } else {
-                    modal1.style.display = "block";
-                }
-
-                if (modal1.style.display = "block") {
-                    modal1.style.display = "none";
-                } else {
-                    modal1.style.display = "block";
-                }
-            }
-
-            /*btn2.onclick = function() {
-                
-            }*/
-
-        </script>
+        <section id="footer">
+            <div class="center-content">
+                <div class="wrapper">
+                    <h3>Copyright 2020 © Kevin Møller Madsen</h3>
+                </div>
+            </div>
+        </section>
 
         <div id="scrollToTop" onclick="scrollToTop()">
             <i class="fas fa-arrow-up"></i>

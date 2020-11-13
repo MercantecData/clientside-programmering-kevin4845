@@ -1,9 +1,5 @@
 function setup() {
-    var test1modal = document.getElementById("test1-modal");
-    var test2modal = document.getElementById("test2-modal");
-
-    var test1button = document.getElementById("test1-button");
-    var test2button = document.getElementById("test2-button");
+    
 
 }
 
